@@ -117,3 +117,33 @@ C:\Users\Gul\Documents\GitHub\HotelManagement\HotelManagement\bin\Debug\Twilio.A
 C:\Users\Gul\Documents\GitHub\HotelManagement\HotelManagement\bin\Debug\Twilio.Api.xml
 C:\Users\Gul\Documents\GitHub\HotelManagement\HotelManagement\obj\Debug\Hotel_Manager.exe.manifest
 C:\Users\Gul\Documents\GitHub\HotelManagement\HotelManagement\obj\Debug\Hotel_Manager.application
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\Hotel_Manager.exe.config
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.exe
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.pdb
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\frontend_reservation.mdf
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\frontend_reservation_log.ldf
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\login_manager.mdf
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\login_manager_log.ldf
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\Hotel_Manager.exe.manifest
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\Hotel_Manager.application
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\Hotel_Manager.exe
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\Hotel_Manager.pdb
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\MetroFramework.Design.dll
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\MetroFramework.dll
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\MetroFramework.Fonts.dll
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\RestSharp.dll
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\Twilio.Api.dll
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\RestSharp.xml
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\Twilio.Api.pdb
+C:\Sajjad Personal\New folder\HotelManagement\bin\Debug\Twilio.Api.xml
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\HotelManagement.csprojResolveAssemblyReference.cache
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.FinalizePayment.resources
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.FoodMenu.resources
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.Kitchen.resources
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.License.resources
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.Login.resources
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.Frontend.resources
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.Properties.Resources.resources
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\HotelManagement.csproj.GenerateResource.Cache
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.exe.manifest
+C:\Sajjad Personal\New folder\HotelManagement\obj\Debug\Hotel_Manager.application

@@ -519,7 +519,7 @@
             this.choiceLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.choiceLabel.Location = new System.Drawing.Point(16, 8);
             this.choiceLabel.Name = "choiceLabel";
-            this.choiceLabel.Size = new System.Drawing.Size(86, 19);
+            this.choiceLabel.Size = new System.Drawing.Size(85, 19);
             this.choiceLabel.TabIndex = 21;
             this.choiceLabel.Text = "Your choices";
             this.choiceLabel.UseCustomBackColor = true;
@@ -569,7 +569,7 @@
             this.emailLabel.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.emailLabel.Location = new System.Drawing.Point(15, 225);
             this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(131, 19);
+            this.emailLabel.Size = new System.Drawing.Size(130, 19);
             this.emailLabel.TabIndex = 15;
             this.emailLabel.Text = "Your e-mail address";
             this.emailLabel.UseCustomBackColor = true;
@@ -901,7 +901,7 @@
             this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel6.Location = new System.Drawing.Point(14, 247);
             this.metroLabel6.Name = "metroLabel6";
-            this.metroLabel6.Size = new System.Drawing.Size(89, 19);
+            this.metroLabel6.Size = new System.Drawing.Size(88, 19);
             this.metroLabel6.TabIndex = 16;
             this.metroLabel6.Text = "Your address";
             this.metroLabel6.UseCustomBackColor = true;
@@ -968,7 +968,7 @@
             this.SearchError.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.SearchError.Location = new System.Drawing.Point(270, 37);
             this.SearchError.Name = "SearchError";
-            this.SearchError.Size = new System.Drawing.Size(315, 150);
+            this.SearchError.Size = new System.Drawing.Size(313, 150);
             this.SearchError.Style = MetroFramework.MetroColorStyle.Green;
             this.SearchError.TabIndex = 19;
             this.SearchError.Text = "I ran out of entries :( SORRY DUDE.\r\n\r\nYou know, we can make another deal. \r\n\r\nI " +
@@ -1074,7 +1074,7 @@
             this.metroLabel13.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel13.Location = new System.Drawing.Point(459, 28);
             this.metroLabel13.Name = "metroLabel13";
-            this.metroLabel13.Size = new System.Drawing.Size(479, 19);
+            this.metroLabel13.Size = new System.Drawing.Size(478, 19);
             this.metroLabel13.TabIndex = 10;
             this.metroLabel13.Text = "Room#| Type  |  ID#   |       Name      |      Phone #      |     Entry       |  " +
     "  Depart";
@@ -1088,7 +1088,7 @@
             this.metroLabel11.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel11.Location = new System.Drawing.Point(-3, 28);
             this.metroLabel11.Name = "metroLabel11";
-            this.metroLabel11.Size = new System.Drawing.Size(311, 19);
+            this.metroLabel11.Size = new System.Drawing.Size(310, 19);
             this.metroLabel11.TabIndex = 9;
             this.metroLabel11.Text = "Room#| Type  |  ID#   |       Name      |      Phone #";
             this.metroLabel11.UseCustomBackColor = true;
