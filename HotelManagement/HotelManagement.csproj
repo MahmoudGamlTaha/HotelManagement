@@ -48,11 +48,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>FB77CEF9C59A48F875FF7488A280D7CC42EA94F3</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>9D79E06C3549F4136D9E3FEDA04DB92C97711686</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>
-    </ManifestKeyFile>
+    <ManifestKeyFile>Hotel_Manager_TemporaryKey.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <GenerateManifests>true</GenerateManifests>

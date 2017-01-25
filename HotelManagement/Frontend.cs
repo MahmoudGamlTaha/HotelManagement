@@ -1,10 +1,17 @@
 ﻿using MetroFramework.Forms;
+using MetroFramework.Fonts;
+using MetroFramework.Drawing;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
+using System.Configuration;
 using Twilio;
 namespace Hotel_Manager
 {
@@ -17,8 +24,8 @@ namespace Hotel_Manager
         {
             InitializeComponent();
             CenterToScreen();
-            //entryDatePicker.MinDate = DateTime.Today;
-            //depDatePicker.MinDate = DateTime.Today.AddDays(1);
+            entryDatePicker.MinDate = DateTime.Now;
+            depDatePicker.MinDate = DateTime.Today.AddDays(1);
 
             LoadForDataGridView();
             GetOccupiedRoom();
@@ -100,7 +107,7 @@ namespace Hotel_Manager
         private void MainTab_Load(object sender, EventArgs e)
         {
             foodSupplyCheckBox.Enabled = false;
-
+           
         }
 
         public void foodMenuButton_Click(object sender, EventArgs e)
@@ -157,7 +164,7 @@ namespace Hotel_Manager
                 foodBill = bfast + Lnch + di_ner;
             }
         }
-
+     
         private void roomTypeComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -227,7 +234,7 @@ namespace Hotel_Manager
             reset_frontend();
         }
 
-
+        
         private void finalizeButton_Click(object sender, EventArgs e)
         {
             if (breakfast == 0 && lunch == 0 && dinner == 0 && cleaning == "0" && towel == "0" && surprise == "0")
@@ -282,7 +289,7 @@ namespace Hotel_Manager
                 smsCheckBox.Text = "SMS Sent";
             }
         }
-
+      
         private void submitButton_Click(object sender, EventArgs e)
         {
             birthday = (monthComboBox.SelectedItem) + "-" + (dayComboBox.SelectedIndex + 1) + "-" + yearTextBox.Text;
@@ -346,20 +353,16 @@ namespace Hotel_Manager
                 }
             }
         }
-        public void ClearAllComboBox(Control controls)
-        {
-            foreach (Control control in controls.Controls)
-            {
+        public void ClearAllComboBox(Control controls){
+            foreach(Control control in controls.Controls){
                 if (control == roomTypeComboBox)
                 {
                     continue;
                 }
-                else if (control is ComboBox)
-                {
+                else if(control is ComboBox){
                     ((ComboBox)control).SelectedIndex = -1;
                 }
-                if (control.HasChildren)
-                {
+                if (control.HasChildren) {
                     ClearAllComboBox(control);
                 }
             }
@@ -430,7 +433,7 @@ namespace Hotel_Manager
         private void updateButton_Click(object sender, EventArgs e)
         {
             birthday = (monthComboBox.SelectedItem) + "-" + (dayComboBox.SelectedIndex + 1) + "-" + yearTextBox.Text;
-            // MessageBox.Show(Convert.ToString(cleaning) + " " + Convert.ToString(towel) + " " + Convert.ToString(surprise));
+           // MessageBox.Show(Convert.ToString(cleaning) + " " + Convert.ToString(towel) + " " + Convert.ToString(surprise));
             string query = "update reservation set first_name ='" + firstNameTextBox.Text +
               "', last_name ='" + lastNameTextBox.Text + "', birth_day='" + birthday + "', gender='" + genderComboBox.SelectedItem + "', phone_number='" + phoneNumberTextBox.Text + "', email_address='" + emailTextBox.Text +
               "', number_guest='" + (qtGuestComboBox.SelectedIndex + 1) + "', street_address='" + addLabel.Text + "', apt_suite='" + aptTextBox.Text + "', city='" + cityTextBox.Text +
@@ -440,7 +443,7 @@ namespace Hotel_Manager
               "', check_in='" + checkin + "', lunch='" + lunch + "', dinner='" + dinner + "', supply_status='" + foodStatus + "',cleaning='" + Convert.ToInt32(cleaning) + "',towel='" + Convert.ToInt32(towel) + "',s_surprise='" + Convert.ToInt32(surprise) + "',food_bill='" + foodBill + "' WHERE Id = '" + primartyID + "';";
 
             SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
-
+           
             SqlCommand query_table = new SqlCommand(query, connection);
             SqlDataReader reader;
             try
@@ -490,7 +493,7 @@ namespace Hotel_Manager
         {
             getChecked();
             string getQuerystring = resEditButton.Text.Substring(0, 4).Replace(" ", string.Empty);
-            //  MessageBox.Show("ID+" + getQuerystring);
+          //  MessageBox.Show("ID+" + getQuerystring);
             string query = "Select * from reservation where Id= '" + getQuerystring + "'";
 
             SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
@@ -658,7 +661,7 @@ namespace Hotel_Manager
         {
             string query = "Select * from reservation";
             SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
-
+            
             SqlCommand query_table = new SqlCommand(query, connection);
             SqlDataReader reader;
             try
@@ -798,7 +801,7 @@ namespace Hotel_Manager
             }
 
         }
-
+        
 
         private void getChecked()
         {
@@ -839,22 +842,22 @@ namespace Hotel_Manager
 
         private void phoneNumberTextBox_Leave(object sender, EventArgs e)
         {
-            RecvPhoneNumber = "+1" + phoneNumberTextBox.Text.Replace(" ", string.Empty);
+            RecvPhoneNumber = "+1"+phoneNumberTextBox.Text.Replace(" ", string.Empty);
             long getphn = Convert.ToInt64(phoneNumberTextBox.Text);
             string formatString = String.Format("{0:(000)000-0000}", getphn);
             phoneNumberTextBox.Text = formatString;
         }
         private void searchButton_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
-
+          SqlConnection connection = new SqlConnection(Hotel_Manager.Properties.Settings.Default.frontend_reservationConnectionString);
+            
             connection.Open();
             string query = "Select * from reservation where Id like '%" + searchTextBox.Text + "%' OR last_name like '%" + searchTextBox.Text + "%' OR first_name like '%" + searchTextBox.Text + "%' OR gender like '%" + searchTextBox.Text + "%' OR state like '%" + searchTextBox.Text + "%' OR city like '%" + searchTextBox.Text + "%' OR room_number like '%" + searchTextBox.Text + "%' OR room_type like '%" + searchTextBox.Text + "%' OR email_address like '%" + searchTextBox.Text + "%' OR phone_number like '%" + searchTextBox.Text + "%'";
-
+           
             SqlCommand com = new SqlCommand(query, connection);
             SqlDataAdapter data_adapter = new SqlDataAdapter(query, connection);
             DataTable data_table = new DataTable();
-
+            
             data_adapter.Fill(data_table);
 
             BindingSource bindingSource = new BindingSource();
@@ -877,9 +880,9 @@ namespace Hotel_Manager
             {
                 searchDataGridView.Visible = false;
                 SearchError.Visible = true;
-                SearchError.Text = "SORRY DUDE :(" + "\n"
-                    + "I ran out of gas trying to search for " + searchTextBox.Text + "\n"
-                + "I sure will find it next time.";
+                SearchError.Text = "SORRY DUDE :(" +"\n"
+                    +"I ran out of gas trying to search for "+ searchTextBox.Text +"\n"
+                +"I sure will find it next time."; 
             }
         }
 
