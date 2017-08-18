@@ -35,9 +35,9 @@
             // LicenseText
             // 
             this.LicenseText.AutoSize = true;
-            this.LicenseText.Location = new System.Drawing.Point(-3, 4);
+            this.LicenseText.Location = new System.Drawing.Point(2, 7);
             this.LicenseText.Name = "LicenseText";
-            this.LicenseText.Size = new System.Drawing.Size(487, 228);
+            this.LicenseText.Size = new System.Drawing.Size(487, 266);
             this.LicenseText.TabIndex = 0;
             this.LicenseText.Text = resources.GetString("LicenseText.Text");
             // 
@@ -45,7 +45,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(516, 197);
+            this.ClientSize = new System.Drawing.Size(516, 257);
             this.Controls.Add(this.LicenseText);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
