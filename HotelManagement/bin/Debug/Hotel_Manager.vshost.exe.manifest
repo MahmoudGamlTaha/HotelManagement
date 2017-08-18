@@ -49,7 +49,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>r2XpjiUQhPlzaOOQ/Kba9PTT2HsvKFWo3BLpbZ2ZOnY=</dsig:DigestValue>
+        <dsig:DigestValue>QhRzmRZ55dNUzN3wkYPj8O1MEs5tvvTC3yFPCWTUFXU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -131,13 +131,13 @@
       <dsig:DigestValue>bRrmJ1yDhzT9/5Azc6lW1S667/BsLhSDZkJS+jP1mAU=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="Hotel_Manager.exe.config" size="890">
+  <file name="Hotel_Manager.exe.config" size="920">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>eHAuZNNFMQZhOl3T4bcl2a8CaesskCo/o7e2Fvqrq8E=</dsig:DigestValue>
+      <dsig:DigestValue>M8GYqeu5fpVnOh3mp0kv74ayApbtKtfmaGTf9gMTUwU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="login_manager.mdf" size="3211264" writeableType="applicationData">
